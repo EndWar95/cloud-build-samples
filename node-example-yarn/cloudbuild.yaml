@@ -22,8 +22,10 @@ steps:
 - name: node
   entrypoint: yarn
   args: ['test']
+  dir: 'node-example-yarn'
 # Run custom commands
 - name: node
   entrypoint: yarn
   args: ['run', 'build']
+  dir: 'node-example-yarn'
 # [END cloudbuild_yarn_node]
